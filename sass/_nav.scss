@@ -1,0 +1,29 @@
+.navBar {
+	background:$navy;
+	//height:20px;
+	&:hover {
+		background:lighten($navy,60);
+	}
+}		
+	
+ul.navItems {
+
+	margin-top:127px;
+	text-align:center;
+	li {
+		display:inline;
+		margin: 0 auto;
+		a {
+			color:$bckrnd;
+			text-decoration: none;
+			font-family:'Monoton', cursive;
+			font-size: 30px;
+			margin-top: 15px;
+			&:hover {
+				color:$navy;
+
+
+			}
+		}
+	}
+}	

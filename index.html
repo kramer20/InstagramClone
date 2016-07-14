@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang='en' ng-app="starter">
+<html lang='en' ng-app="instagram">
 <head>
      <meta charset='utf-8'>
-     <title>Starter Angular Site</title>
+     <title>Instagram Clone</title>
 
     <meta name='description' content='Starter Angular App'>
     <meta name='author' content='Jake Boyles'>
@@ -17,18 +17,39 @@
 	<script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="https://use.fontawesome.com/247c14072a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Mogra|Monoton" rel="stylesheet">
+
 </head>
 
 <body id="body">
-       
-    <div ui-view="main">
+
+    <div class ="container-fluid">
+        <div class="row header">
+
+        <div class="col-md-4 navBar" ui-view="navleft">
+                
+            </div> 
+
+            <div class="col-lg-4 logoCol">
+                <img class="instaLogo" src="images/instaLogo.png">
+            </div>
+
+             <div class="col-md-4 navBar" ui-view="navright">
+
+            </div> 
+             
+        </div>
+
+            <div ui-view="main">
+            </div>
+
     </div>
-
-
-<!--link to JS file-->
-<script src="js/main.js"></script>
-<script src="js/factories/api.js"></script>
-<script src="js/directives/directive.js"></script>
-<script src="js/controllers/mainControl.js"></script>
+        <!--link to JS file-->
+        <script src="js/main.js"></script>
+        <script src="js/factories/api.js"></script>
+        <script src="js/directives/directive.js"></script>
+        <script src="js/controllers/mainControl.js"></script>
+        <script src="js/controllers/addControl.js"></script>
+        <script src="js/controllers/detailControl.js"></script>
 </body>
 </html>

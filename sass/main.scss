@@ -1,7 +1,37 @@
+$bckrnd:#DBEAE3;
+$purp:#565054;
+$grn:#5F9581;
+$brown:#F7D186;
+$drkbrwn:#C9812D;
+$navy:#36364F;
+$pink:#EF3964;
+
+@import 'add';
+@import 'detail';
+@import 'nav';
+
 body{
-	background: white;
+	background:$bckrnd;
 	margin:0;
 	padding:0;
 }
 
+
+.logoCol {
+	// border-bottom:4px solid $navy;
+	// border-right:4px solid $navy;
+	// border-left:4px solid $navy;
+	// border-radius:4px;
+	background:lighten($navy,60);
+}
+
+.instaLogo {
+	width:120px;
+	margin:0 auto;
+	display:block;
+	//border:6px solid $brown;
+	border-radius:40px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
 

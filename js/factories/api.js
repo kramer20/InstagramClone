@@ -1,13 +1,13 @@
-(function () {
-	'use strict';
-	angular
-		.module('starter')
-		 .factory('API', function($http) {
+// (function () {
+// 	'use strict';
+// 	angular
+// 		.module('instagram')
+// 		 .factory('API', function($http) {
 
 		 	
-		 	return {
-		 	}
+// 		 	return {
+// 		 	}
 
 		 
-		 });
-})();
+// 		 });
+// })();

@@ -3,7 +3,7 @@
     
     angular
     .module('instagram')
-    .controller('MainController', function(API) {
+    .controller('AddController', function(API) {
        var vm = this;
       
     });

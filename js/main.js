@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     angular
-        .module('starter', ['ui.router'])
+        .module('instagram', ['ui.router'])
         .config(function($stateProvider, $urlRouterProvider) {
 
 	  	$urlRouterProvider.otherwise("/");
@@ -14,9 +14,48 @@
 		        templateUrl: '../views/home.html',
 		        controller: 'MainController',
 		        controllerAs: 'controller'
-		      }
+		      },
+		       'navleft': {
+		        templateUrl: '../views/partials/navleft.html',
+		      },
+		      'navright': {
+		        templateUrl: '../views/partials/navright.html',
+		      },
 		  },
-	    })
+		 })  
+	    .state('detail', {
+      	url: '/detail',
+      	views: {
+      		'main': {
+		        templateUrl: '../views/detail.html',
+		        controller: 'DetailController',
+		        controllerAs: 'controller'
+		      },
+		       'navleft': {
+		        templateUrl: '../views/partials/navleft.html',
+		      },
+		      'navright': {
+		        templateUrl: '../views/partials/navright.html',
+		      },
+		  },
+		 })  
+	    .state('add', {
+      	url: '/add',
+      	views: {
+      		'main': {
+		        templateUrl: '../views/add.html',
+		        controller: 'AddController',
+		        controllerAs: 'controller'
+		      },
+		       'navleft': {
+		        templateUrl: '../views/partials/navleft.html',
+		      },
+		      'navright': {
+		        templateUrl: '../views/partials/navright.html',
+		      },
+		  },
+	    });
+
 	});
 })();
 

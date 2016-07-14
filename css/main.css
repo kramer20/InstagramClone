@@ -1,4 +1,35 @@
+.navBar {
+  background: #36364F; }
+  .navBar:hover {
+    background: #d5d5e2; }
+
+ul.navItems {
+  margin-top: 127px;
+  text-align: center; }
+  ul.navItems li {
+    display: inline;
+    margin: 0 auto; }
+    ul.navItems li a {
+      color: #DBEAE3;
+      text-decoration: none;
+      font-family: 'Monoton', cursive;
+      font-size: 30px;
+      margin-top: 15px; }
+      ul.navItems li a:hover {
+        color: #36364F; }
+
 body {
-  background: white;
+  background: #DBEAE3;
   margin: 0;
   padding: 0; }
+
+.logoCol {
+  background: #d5d5e2; }
+
+.instaLogo {
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
