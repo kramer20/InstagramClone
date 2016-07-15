@@ -39,6 +39,28 @@ button.btn {
     background-color: #5f5f8c;
     color: #DBEAE3; }
 
+h2.detailsTitle {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Monoton", cursive;
+  font-size: 40px;
+  color: #36364F; }
+
+.detail {
+  margin-top: 30px; }
+
+img.singleImg {
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+  border: 3px solid #36364F;
+  padding: 4px;
+  border-radius: 4px;
+  background: #d5d5e2; }
+
 .navBar {
   background: #d5d5e2; }
   .navBar:hover {
@@ -87,7 +109,7 @@ h2.likePost {
   color: #36364F; }
 
 .likeableImages {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 40px; }
 
 img.imageLike {
