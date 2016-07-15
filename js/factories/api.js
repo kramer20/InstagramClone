@@ -5,7 +5,7 @@
 		 .factory('API', function($http) {
 
 		 	function getImage(){
-		        var ajaxRequest = $http({
+		        var gettingImage = $http({
 		          method: 'GET',
 		          headers:
 		          {
@@ -14,11 +14,42 @@
 		          url: 'http://instagramcloneclass.herokuapp.com/images'
 		          });
 
-		        return ajaxRequest;
+		        return gettingImage;
    			}
+
+   			function postImage(data){
+		        var postingData = $http({
+		          method: 'POST',
+		          data: data, 
+		          headers:
+		          {
+		            X_CSRF_TOKEN: 'malorie',
+		          },
+		          url: 'http://instagramcloneclass.herokuapp.com/image/post'
+		          });
+
+		        return postingData;
+		    }    
+
+		    function singleImage(id){
+		        var getSingle = $http({
+		          method: 'GET',
+		          headers:
+		          {
+		            X_CSRF_TOKEN: 'malorie',
+		          },
+		          url: 'http://instagramcloneclass.herokuapp.com/images/'+id
+		          });
+
+		        return getSingle;
+		    }
+
+
 		 	return {
 		 		getImage:getImage,
-		 	}
+		 		postImage:postImage,
+		 		singleImage:singleImage,
+		 	};
 
 		 
 		 });

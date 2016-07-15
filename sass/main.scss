@@ -37,3 +37,29 @@ body{
 	margin-bottom:30px;
 }
 
+h2.likePost {
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-family:$main-font;
+	font-size:40px;
+	color:$navy;
+}
+
+.likeableImages {
+	margin-top:10px;
+	margin-bottom:40px;
+
+}
+
+img.imageLike {
+	width:400px;
+	height:350px;
+	margin:0 auto;
+	display:block;
+	border:3px solid $navy;
+	padding:4px;
+	border-radius:4px;
+	background:lighten($navy,60);
+	
+}
