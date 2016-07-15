@@ -1,7 +1,49 @@
+h2.posts {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Monoton", cursive;
+  font-size: 40px;
+  color: #36364F; }
+
+input.form-control {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 400px;
+  margin-bottom: 10px;
+  color: #36364F; }
+
+textarea.form-control {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 0 auto;
+  height: 200px;
+  width: 450px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #36364F; }
+
+button.btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #36364F;
+  color: #DBEAE3;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  width: 86px;
+  text-transform: uppercase; }
+  button.btn:hover {
+    background-color: #5f5f8c;
+    color: #DBEAE3; }
+
 .navBar {
-  background: #36364F; }
+  background: #d5d5e2; }
   .navBar:hover {
-    background: #d5d5e2; }
+    background: #36364F; }
+    .navBar:hover a {
+      color: #DBEAE3; }
 
 ul.navItems {
   margin-top: 127px;
@@ -10,13 +52,13 @@ ul.navItems {
     display: inline;
     margin: 0 auto; }
     ul.navItems li a {
-      color: #DBEAE3;
+      color: #36364F;
       text-decoration: none;
       font-family: 'Monoton', cursive;
       font-size: 30px;
       margin-top: 15px; }
       ul.navItems li a:hover {
-        color: #36364F; }
+        color: #DBEAE3; }
 
 body {
   background: #DBEAE3;
@@ -30,6 +72,7 @@ body {
   width: 120px;
   margin: 0 auto;
   display: block;
+  border: 7px solid #DBEAE3;
   border-radius: 40px;
   margin-top: 30px;
   margin-bottom: 30px; }

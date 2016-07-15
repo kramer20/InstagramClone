@@ -5,6 +5,8 @@ $brown:#F7D186;
 $drkbrwn:#C9812D;
 $navy:#36364F;
 $pink:#EF3964;
+$main-font:'Monoton', cursive;
+$text-font:'Open Sans Condensed', sans-serif;
 
 @import 'add';
 @import 'detail';
@@ -29,7 +31,7 @@ body{
 	width:120px;
 	margin:0 auto;
 	display:block;
-	//border:6px solid $brown;
+	border:7px solid $bckrnd;
 	border-radius:40px;
 	margin-top:30px;
 	margin-bottom:30px;

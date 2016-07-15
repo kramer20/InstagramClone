@@ -1,8 +1,11 @@
 .navBar {
-	background:$navy;
+	background:lighten($navy,60);
 	//height:20px;
 	&:hover {
-		background:lighten($navy,60);
+		background:$navy;
+		a {
+			color:$bckrnd;
+		}
 	}
 }		
 	
@@ -14,13 +17,13 @@ ul.navItems {
 		display:inline;
 		margin: 0 auto;
 		a {
-			color:$bckrnd;
+			color:$navy;
 			text-decoration: none;
 			font-family:'Monoton', cursive;
 			font-size: 30px;
 			margin-top: 15px;
 			&:hover {
-				color:$navy;
+				color:$bckrnd;
 
 
 			}
