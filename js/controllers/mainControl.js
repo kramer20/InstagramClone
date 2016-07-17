@@ -21,7 +21,7 @@
           
           like.then(function(response){
           console.log(response);
-          // image.likes ++;
+          image.likes ++;
             
           });
 

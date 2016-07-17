@@ -5,10 +5,10 @@
 		<a href="#/detail/{{image._id}}"><img src="{{image.url}}" class="imageLike"></a>
 
 		<div class="heartIcon">
-			<i ng-click="home.likeImage(image)" ng-init="count=0" class="fa fa-heart-o" aria-hidden="true"></i>
+			<i ng-click="controller.likeImage(image)" ng-init="count=0" class="fa fa-heart-o" aria-hidden="true"></i>
 		</div>
 		<div class="numberLikes">
-			<p><!-- {{image.likes}} --> Likes</p>
+			<p>{{image.likes}} Likes</p>
 		</div>	
 
 	</div>
