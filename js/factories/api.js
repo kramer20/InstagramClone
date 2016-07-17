@@ -44,7 +44,12 @@
 		        return getSingle;
 		    }
 
-		    function likeImage(data){
+		    function likeImage(id){
+		        
+		        var data = {
+		 			imageid: id,
+		 		}
+
 		        var likingImage = $http({
 		          method: 'POST',
 		          data: data, 

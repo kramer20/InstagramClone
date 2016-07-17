@@ -11,5 +11,7 @@
      	singlePost.then(function(results){
      		vm.detail = results.data;
      	})
-    });
+
+       }); 
+
 })();

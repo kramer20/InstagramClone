@@ -8,13 +8,25 @@
 
        var oldPosts = API.getImage();
 
-       oldPosts.then(function(results){
-       		var images = results.data.images;
+         oldPosts.then(function(results){
+         		var images = results.data.images;
 
-       		var images = images.reverse();
+         		var images = images.reverse();
 
-       		vm.images = images;
-       });
-      
-    });
+         		vm.images = images;
+         })
+
+        vm.likeImage= function(image){
+          var like = API.likeImage(image._id);
+          
+          like.then(function(response){
+          console.log(response);
+          // image.likes ++;
+            
+          });
+
+        }
+
+      });
+
 })();
