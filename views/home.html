@@ -3,5 +3,13 @@
 <div class="homeImage row">
 	<div class="col-md-4 likeableImages" ng-repeat="image in controller.images">
 		<a href="#/detail/{{image._id}}"><img src="{{image.url}}" class="imageLike"></a>
+
+		<div class="heartIcon">
+			<i class="fa fa-heart-o" aria-hidden="true"></i>
+		</div>
+		<div class="numberLikes">
+			<p>{{}} Likes</p>
+		</div>	
+
 	</div>
 </div>

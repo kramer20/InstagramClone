@@ -5,15 +5,17 @@ h2.posts {
 	font-family:$main-font;
 	font-size:40px;
 	color:$navy;
-
 }
 
+form {
+	padding-top:20px;
+}
 
 input.form-control{
 	font-family:$text-font;
 	font-size:18px;
 	margin:0 auto;
-	width:400px;
+	width:450px;
 	margin-bottom:10px;
 	color:$navy;
 	height:40px;
@@ -27,7 +29,6 @@ textarea.form-control {
 	font-size:18px;
 	margin-bottom:10px;
 	color:$navy;
-
 }
 
 button.btn {

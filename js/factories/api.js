@@ -44,11 +44,27 @@
 		        return getSingle;
 		    }
 
+		    function likeImage(data){
+		        var likingImage = $http({
+		          method: 'POST',
+		          data: data, 
+		          headers:
+		          {
+		            X_CSRF_TOKEN: 'malorie',
+		          },
+		          url: 'http://instagramcloneclass.herokuapp.com/images/vote'
+		          });
+
+		        return likingImage;
+		    }  
+
+
 
 		 	return {
 		 		getImage:getImage,
 		 		postImage:postImage,
 		 		singleImage:singleImage,
+		 		likeImage:likeImage,
 		 	};
 
 		 
