@@ -12,6 +12,18 @@
      		vm.detail = results.data;
      	})
 
+        vm.likeImage= function(image){
+        var like = API.likeImage(image._id);
+          
+        like.then(function(response){
+        console.log(response);
+        image.likes ++;
+            
+          });
+
+        }
+
+
        }); 
 
 })();

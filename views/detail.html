@@ -2,7 +2,7 @@
 
 <div class="detail row">
 	<div class="col-md-6 imageCol">
-		<img src="{{controller.detail.url}}" class="singleImg">
+		<img ng-dblclick="controller.likeImage(controller.detail)" ng-init="count=0" src="{{controller.detail.url}}" class="singleImg">
 	</div>
 
 	<div class="col-md-6 titleDeats">
@@ -11,8 +11,8 @@
 
 		<p class="singleDeats">{{controller.detail.description}}</p>
 
-		<div class="heartIcon">
-			<i class="fa fa-heart-o" aria-hidden="true"></i>
+		<div class="deatHeartIcon">
+			<i ng-click="controller.likeImage(controller.detail)" ng-init="count=0" class="fa fa-heart-o" aria-hidden="true"></i>
 			<p class="amountLikes">{{controller.detail.likes}} Likes</p>
 		</div>	
 	</div>

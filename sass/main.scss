@@ -40,16 +40,12 @@ body{
 h2.likePost {
 	text-align:center;
 	margin-top:20px;
-	margin-bottom:20px;
+	margin-bottom:40px;
 	font-family:$main-font;
 	font-size:40px;
 	color:$navy;
 }
 
-.likeableImages {
-	margin-top:20px;
-
-}
 
 img.imageLike {
 	width:374px;
@@ -63,8 +59,17 @@ img.imageLike {
 	
 }
 
-.heartIcon{
+ul {
 	text-align:center;
+}
+
+li {
+
+	display:inline-block;
+	margin-right:15px;
+}
+
+.heartIcon{
 	margin-top:20px;
 }
 
@@ -75,6 +80,13 @@ i.fa{
 	// &:hover {
 	// 	color:red;
 	// }
+}
+
+.linkIcon p {
+	text-align:center;
+	font-size:20px;
+	font-family:$text-font;
+	color:$navy;
 }
 
 .numberLikes p {

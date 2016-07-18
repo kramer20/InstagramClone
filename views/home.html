@@ -2,14 +2,22 @@
 
 <div class="homeImage row">
 	<div class="col-md-4 likeableImages" ng-repeat="image in controller.images">
-		<a href="#/detail/{{image._id}}"><img src="{{image.url}}" class="imageLike"></a>
+		<img ng-dblclick="controller.likeImage(image)" ng-init="count=0" src="{{image.url}}" class="imageLike">
 
-		<div class="heartIcon">
-			<i ng-click="controller.likeImage(image)" ng-init="count=0" class="fa fa-heart-o" aria-hidden="true"></i>
-		</div>
-		<div class="numberLikes">
-			<p>{{image.likes}} Likes</p>
-		</div>	
+		<ul class="likesDetails">
+			<li class="heartIcon">
+				<i ng-click="controller.likeImage(image)" ng-init="count=0" class="fa fa-heart-o" aria-hidden="true"></i>
+				<div class="numberLikes">
+					<p>{{image.likes}} Likes</p>
+				</div>	
+			</li>
+			
 
+			<li class="linkIcon">
+				<a href="#/detail/{{image._id}}"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+				<p>Details</p>
+			</li>	
+		</ul>
+			
 	</div>
 </div>
