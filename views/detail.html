@@ -2,7 +2,12 @@
 
 <div class="detail row">
 	<div class="col-md-6 imageCol">
-		<img ng-dblclick="controller.likeImage(controller.detail)" ng-init="count=0" src="{{controller.detail.url}}" class="singleImg">
+		<div class="likeSection">
+			<img ng-dblclick="controller.likeImage(controller.detail)" ng-init="count=0" src="{{controller.detail.url}}" class="singleImg" ng-dblclick="showClick=false" ng-dblclick="showClick=true">
+			<i id="firstHeart" ng-hide="showClick" class="fa fa-heart-o" aria-hidden="true"></i>
+			<i id="firstHeart" ng-show="showClick" class="fa fa-heart-o" aria-hidden="true"></i>
+		</div>
+			
 	</div>
 
 	<div class="col-md-6 titleDeats">

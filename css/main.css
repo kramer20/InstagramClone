@@ -56,7 +56,8 @@ h2.detailsTitle {
   border-radius: 4px;
   width: 750px;
   margin: 0 auto;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center; }
 
 img.singleImg {
   width: 400px;
@@ -64,7 +65,8 @@ img.singleImg {
   margin-bottom: 30px;
   margin: 0 auto;
   display: block;
-  padding: 20px; }
+  padding: 20px;
+  position: relative; }
 
 h3.singleTitle {
   margin-top: 20px;
@@ -94,6 +96,12 @@ i.fa {
   font-size: 30px;
   color: #36364F;
   font-weight: bold; }
+
+i.fa#firstHeart {
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  margin-top: -216px; }
 
 .navBar {
   background: #d5d5e2; }
