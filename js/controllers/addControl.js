@@ -12,8 +12,8 @@
        	createPost.then(function(response){
        		console.log(response);
           vm.form = "";
-       	})
-       }
+       	});
+       };
       
     });
 })();

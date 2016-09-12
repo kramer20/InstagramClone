@@ -97,11 +97,15 @@ i.fa {
   color: #36364F;
   font-weight: bold; }
 
-i.fa#firstHeart {
+i.fa.bigHeartTwo {
   font-size: 100px;
   color: white;
   position: absolute;
-  margin-top: -216px; }
+  margin-top: -216px;
+  margin-left: 144px; }
+
+i.fa.bigHeartTwo {
+  display: block !important; }
 
 .navBar {
   background: #d5d5e2; }
@@ -170,10 +174,19 @@ li {
 .heartIcon {
   margin-top: 20px; }
 
+i.fa.bigHeart {
+  color: white;
+  font-size: 90px;
+  margin-left: 185px;
+  position: absolute;
+  margin-top: -215px; }
+
 i.fa {
   font-size: 30px;
   color: #36364F;
   font-weight: bold; }
+  i.fa:hover {
+    cursor: pointer; }
 
 .linkIcon p {
   text-align: center;

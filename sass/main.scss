@@ -73,13 +73,21 @@ li {
 	margin-top:20px;
 }
 
+i.fa.bigHeart{
+	color:white;
+	font-size:90px;
+	margin-left:185px;
+	position:absolute;
+	margin-top:-215px;
+}
+
 i.fa{
 	font-size:30px;
 	color:$navy;
 	font-weight:bold;
-	// &:hover {
-	// 	color:red;
-	// }
+	&:hover {
+	 	cursor:pointer;
+	}
 }
 
 .linkIcon p {

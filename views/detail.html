@@ -3,9 +3,11 @@
 <div class="detail row">
 	<div class="col-md-6 imageCol">
 		<div class="likeSection">
-			<img ng-dblclick="controller.likeImage(controller.detail)" ng-init="count=0" src="{{controller.detail.url}}" class="singleImg" ng-dblclick="showClick=false" ng-dblclick="showClick=true">
+			<!-- <img ng-dblclick="controller.likeImage(controller.detail)" ng-init="count=0" src="{{controller.detail.url}}" class="singleImg" ng-dblclick="showClick=false" ng-dblclick="showClick=true">
 			<i id="firstHeart" ng-hide="showClick" class="fa fa-heart-o" aria-hidden="true"></i>
-			<i id="firstHeart" ng-show="showClick" class="fa fa-heart-o" aria-hidden="true"></i>
+			<i id="firstHeart" ng-show="showClick" class="fa fa-heart-o" aria-hidden="true"></i> -->
+			<img ng-dblclick="controller.likeImage(controller.detail)" ng-init="count=0" src="{{controller.detail.url}}" class="singleImg">
+			<i class="fa fa-heart-o bigHeartTwo ng-hide" ng-show="controller.detail.showClick"></i>
 		</div>
 			
 	</div>

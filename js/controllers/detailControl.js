@@ -10,7 +10,7 @@
 
      	singlePost.then(function(results){
      		vm.detail = results.data;
-     	})
+     	});
 
         vm.likeImage= function(image){
         var like = API.likeImage(image._id);
@@ -18,10 +18,16 @@
         like.then(function(response){
         console.log(response);
         image.likes ++;
+        image.showClick = true;
+
+          $timeout(function(){
+            image.showClick = false;
+
+          },400);
             
           });
 
-        }
+        };
 
 
        }); 

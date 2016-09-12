@@ -48,7 +48,7 @@
 		        
 		        var data = {
 		 			imageid: id,
-		 		}
+		 		};
 
 		        var likingImage = $http({
 		          method: 'POST',

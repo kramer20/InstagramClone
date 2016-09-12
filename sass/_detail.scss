@@ -63,10 +63,14 @@ i.fa{
 	font-weight:bold;
 }	
 
-i.fa#firstHeart {
+i.fa.bigHeartTwo {
 	font-size:100px;
 	color:white;
 	position:absolute;
 	margin-top:-216px;
+	margin-left:144px;
+}
 
+i.fa.bigHeartTwo{
+	display:block !important;
 }
